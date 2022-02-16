@@ -1,11 +1,12 @@
-import react from "react"
+import react ,{useState} from "react"
 import 'bulma/css/bulma.css'
 import '../index.css'
 
 const Navbar = () => {
+  const [hide,setHide] = useState(true)
     return (
-      <nav class="navbar is-pink" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
+      <nav class="navbar is-pink" role="navigation" aria-label="main navigation" style={{'display':'flex','flexDirection':'row', 'justifyContent':'center'}}>
+        <div class="navbar-brand" style={{'marginRight':'300px'}}>
             <h1 class="is-size-2">JisooWorld</h1>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -14,16 +15,18 @@ const Navbar = () => {
               <span aria-hidden="true"></span>
             </a>
         </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item">
+          <div class="navbar" style={{'background':'pink'}}>
+            <div class="navbar-item">
+              <a>
               Home
-            </a>
+              </a>
+            </div>
 
-            <a class="navbar-item">
+            <div class="navbar-item">
+              <a>
               Documentation
-            </a>
+              </a>
+            </div>
 
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
@@ -47,7 +50,6 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-        </div>
       </nav>
     )
 }
