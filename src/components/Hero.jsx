@@ -9,8 +9,10 @@ const Hero = () => {
         <div className="columns is-justify-content-center">
           <div className="column is-three-fifths pt-8">
             <h1 className="title is-1">Blackpink 2022 Welcoming Collection</h1>
-            <div className="column is-align-self-center">
-              <button class="button is-dark">Pre-order Now!!!</button>
+            <div className="columns is-align-content-center">
+              <div className="column " style={{'display':'flex','justifyContent':'center'}}>
+                <button class="button is-dark">Pre-order Now!!!</button>
+              </div>
             </div>
           </div>
           <div className="column">
