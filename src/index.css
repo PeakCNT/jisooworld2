@@ -1,8 +1,21 @@
 :root {
   --bggradient: linear-gradient(160deg, #fa255eaf 30%, #c39ea0, #f8e5e5);
+  /* --bggradient: linear-gradient(
+    160deg,
+    #fbd3d3 50%,
+    #ababab 65%,
+    #bbb 70%,
+    #ccc 75%,
+    #fde3fc
+  ); */
 }
 .is-pink {
   background-image: var(--bggradient);
+}
+
+.footer.is-dark {
+  background-color: #363636;
+  color: #fff;
 }
 
 .pt-hero {
@@ -22,8 +35,12 @@
 }
 
 .px-nav {
-  padding-left: 10rem;
+  padding-left: 16rem;
   padding-right: 15rem;
+}
+
+.pd-footer {
+  padding: 5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -41,5 +58,9 @@
   .image.is-hero {
     padding-right: 0;
     width: 1000px;
+  }
+
+  .pd-footer {
+    padding: 0rem;
   }
 }

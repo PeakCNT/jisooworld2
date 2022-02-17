@@ -2,7 +2,6 @@ import react from "react";
 import "bulma/css/bulma.css";
 import "../index.css";
 import heroPng from "../asset/Hero.png";
-import { AutoComplete } from "antd";
 
 const Hero = () => {
   return (
