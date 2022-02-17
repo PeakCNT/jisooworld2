@@ -1,22 +1,46 @@
 import react from "react";
 import "bulma/css/bulma.css";
 import "../index.css";
+import heroPng from "../asset/Hero.png";
+import { AutoComplete } from "antd";
 
 const Hero = () => {
   return (
     <section class="hero is-pink is-fullheight-with-navbar">
-      <div className="hero-body">
-        <div className="columns is-justify-content-center">
-          <div className="column is-three-fifths pt-8">
-            <h1 className="title is-1">Blackpink 2022 Welcoming Collection</h1>
-            <div className="column is-align-self-center">
-              <button class="button is-dark">Pre-order Now!!!</button>
+      <div className="hero-body" style={{ padding: "0" }}>
+        <div className="columns">
+          <div className="column is-half pt-hero">
+            <h1
+              className="title is-1"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
+              JisooWorld
+            </h1>
+            <div
+              className="column is-size-5"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+              }}
+            >
+              <p>Welcome to the most popular fansite of Blackpink's Jisoo. </p>
+            </div>
+            <div
+              className="column is-size-5"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
+              <p>Please enjoy with us here.</p>
             </div>
           </div>
-          <div className="column">
+          <div className="column is-desktop pl-hero-img">
             <img
-              className="image"
-              src="https://pbs.twimg.com/media/FLicmSQaMAAwdya?format=jpg&name=4096x4096"
+              className="image is-hero"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+              src={heroPng}
             />
           </div>
         </div>

@@ -1,20 +1,45 @@
+:root {
+  --bggradient: linear-gradient(160deg, #fa255eaf 30%, #c39ea0, #f8e5e5);
+}
 .is-pink {
-  background-color: pink;
+  background-image: var(--bggradient);
 }
 
-.pl-10 {
-  padding-left: 10rem;
+.pt-hero {
+  padding-top: 15rem;
+  padding-left: 5rem;
+  margin-left: 5rem;
 }
 
-.pr-30 {
-  padding-right: 30rem;
-}
-
-.pt-8 {
-  padding-top: 8rem;
+.pl-hero-img {
+  margin-left: 0px;
 }
 
 .image.is-hero {
-  width: 50%;
+  padding-right: 4rem;
+  width: 1000px;
   height: auto;
+}
+
+.px-nav {
+  padding-left: 10rem;
+  padding-right: 15rem;
+}
+
+@media screen and (max-width: 768px) {
+  .px-nav {
+    padding-left: 2.5rem;
+    padding-right: 0rem;
+  }
+
+  .pt-hero {
+    padding-top: 2.5rem;
+    padding-left: 0rem;
+    margin-left: 0rem;
+  }
+
+  .image.is-hero {
+    padding-right: 0;
+    width: 1000px;
+  }
 }
