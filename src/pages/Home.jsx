@@ -1,8 +1,14 @@
-import react from 'react'
-import Hero from '../components/Hero'
+import react from "react";
+import Hero from "../components/Hero";
+import HeroCard from "../components/HeroCard";
 
 const Home = () => {
-    return(<Hero/>)
-}
+  return (
+    <>
+      <Hero />
+      <HeroCard />
+    </>
+  );
+};
 
-export default Home
+export default Home;

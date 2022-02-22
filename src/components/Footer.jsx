@@ -14,6 +14,7 @@ const Footer = () => {
                 display: "flex",
                 justifyContent: "center",
                 color: "#FFF",
+                margin: "0",
               }}
               class=""
             >
@@ -24,12 +25,16 @@ const Footer = () => {
             className="column"
             style={{ display: "flex", justifyContent: "center" }}
           >
-            <h1 style={{ marginRight: "80px", color: "#FFF" }}>
-              Let's follow her on instagram.
+            <h1
+              className=" text-footer"
+              style={{ marginRight: "80px", color: "#FFF" }}
+            >
+              Instagram : @sooyaaa__
             </h1>
             <a
               href="https://www.instagram.com/sooyaaa__/"
               target="_blank"
+              className="icon-footer"
               style={{ color: "#FFF" }}
             >
               <FiInstagram size={50} />

@@ -1,5 +1,5 @@
 :root {
-  --bggradient: linear-gradient(160deg, #fa255eaf 30%, #c39ea0, #f8e5e5);
+  --bggradient: linear-gradient(to right, #fa255eaf 65%, #c39ea0, #f8e5e5);
   /* --bggradient: linear-gradient(
     160deg,
     #fbd3d3 50%,
@@ -10,10 +10,15 @@
   ); */
 }
 .is-pink {
-  background-image: var(--bggradient);
+  background-image: linear-gradient(to right, #f650a0, #ff9897);
 }
 
 .footer.is-dark {
+  background-color: #363636;
+  color: #fff;
+}
+
+.navbar-item.is-dark {
   background-color: #363636;
   color: #fff;
 }
@@ -30,12 +35,13 @@
 
 .image.is-hero {
   padding-right: 4rem;
-  width: 1000px;
+  padding-top: 0.5rem;
+  width: 1100px;
   height: auto;
 }
 
 .px-nav {
-  padding-left: 16rem;
+  padding-left: 17rem;
   padding-right: 15rem;
 }
 
@@ -44,6 +50,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .is-pink {
+    background-image: linear-gradient(to right, #f650a0, #ff9897);
+  }
+
   .px-nav {
     padding-left: 2.5rem;
     padding-right: 0rem;
@@ -62,5 +72,13 @@
 
   .pd-footer {
     padding: 0rem;
+  }
+
+  .text-footer {
+    display: none;
+  }
+
+  .icon-footer {
+    padding: 0;
   }
 }
