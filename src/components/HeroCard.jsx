@@ -15,7 +15,7 @@ const HeroCard = () => {
         </a>
         <div class="postcard__text" style={{ color: "black" }}>
           <h1 class="postcard__title blue">
-            <a href="#">Blackpink 2022 Welcoming Colection</a>
+            <a href="#">Blackpink 2022 Welcoming Collection</a>
           </h1>
           <div class="postcard__subtitle small">
             <p>Pre-order period : 14/2/2022-03/03/2022</p>

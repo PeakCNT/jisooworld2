@@ -49,13 +49,13 @@ const Navbar = () => {
 
       {show && (
         <div className="navbar-wrapper is-dark">
-          <a class="navbar-item is-dark" href="/">
+          <Link to="/" class="navbar-item is-dark">
             Home
-          </a>
+          </Link>
 
-          <a class="navbar-item is-dark" href="/biography">
+          <Link to="/biography" class="navbar-item is-dark">
             Biography
-          </a>
+          </Link>
 
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-item is-dark">More</a>
@@ -73,13 +73,13 @@ const Navbar = () => {
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item" href="/">
+          <Link to="/" class="navbar-item">
             Home
-          </a>
+          </Link>
 
-          <a class="navbar-item" href="/biography">
+          <Link to="/biography" class="navbar-item">
             Biography
-          </a>
+          </Link>
 
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">More</a>

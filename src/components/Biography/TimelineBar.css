@@ -1,0 +1,134 @@
+.timeline-wrapper {
+  display: block;
+  width: 90%;
+  position: relative;
+  color: #363636;
+  text-align: center;
+  margin: 0 auto;
+}
+.timeline-wrapper .timeline-line {
+  display: block;
+  width: 90%;
+  height: 6px;
+  border-radius: 12px;
+  background: #363636;
+  position: absolute;
+  top: 50%;
+  box-shadow: 0 0 1px black;
+  left: 5%;
+}
+.timeline-wrapper .timeline-content-day {
+  height: 90%;
+}
+.timeline-wrapper .timeline-content-item {
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+  width: 15%;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  margin-right: -5px;
+  transition: width 0.5s;
+  z-index: 1;
+}
+.timeline-wrapper .timeline-content-item > span {
+  height: 2rem;
+  display: block;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  margin-top: -1em;
+  width: 100%;
+  text-shadow: 0 0 2px black;
+  cursor: pointer;
+}
+.timeline-wrapper .timeline-content-item > button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #363636;
+  color: white;
+}
+.timeline-wrapper .timeline-content-item > span:before {
+  content: " ";
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  top: -2rem;
+  background: white;
+  margin: 0 auto 0.5em auto;
+  border-radius: 50%;
+  box-shadow: 0 0 1px black;
+}
+.timeline-wrapper .timeline-content-item .timeline-content-item-reveal {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -50%;
+  width: 100%;
+}
+.timeline-wrapper .timeline-content-item .timeline-content-item-reveal button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.timeline-wrapper
+  .timeline-content-item
+  .timeline-content-item-reveal
+  button
+  img {
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  max-width: 100%;
+  border: 3px solid white;
+  -webkit-box-shadow: 0 0 2px black;
+  -moz-box-shadow: 0 0 2px black;
+  box-shadow: 0 0 2px black;
+}
+.timeline-wrapper
+  .timeline-content-item
+  .timeline-content-item-reveal
+  button
+  span {
+  position: absolute;
+  width: 250%;
+  margin-left: -75%;
+  bottom: -2rem;
+  left: 0;
+  font-family: serif;
+  font-size: 1.3em;
+  font-style: italic;
+  text-decoration: none;
+  white-space: nowrap;
+  color: white;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 1px black;
+}
+.timeline-wrapper
+  .timeline-content-item
+  .timeline-content-item-reveal
+  button
+  span:after {
+  content: "\203A";
+  margin-left: 0.3em;
+}
+.timeline-wrapper .timeline-content-item.active {
+  width: 10%;
+}
+.timeline-wrapper .timeline-content-item.active .timeline-content-item-reveal {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-wrapper .timeline-content-item > button {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0rem;
+  }
+}
