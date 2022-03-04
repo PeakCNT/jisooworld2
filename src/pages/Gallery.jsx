@@ -5,6 +5,7 @@ import axios from "axios";
 
 const Gallery = () => {
   const [photo, setPhoto] = useState([]);
+  const [showPhoto,setShowPhoto] = useState([])
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
   const [query, setQuery] = useState("");
@@ -12,11 +13,13 @@ const Gallery = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:3000/gallery")
+      .get("http://localhost:4000/gallery")
       .then((response) => {
         // handle success
         setPhoto(response.data.data);
+        setShowPhoto(response.data.data)
         setLoading(false);
+
       })
       .catch((error) => {
         // handle error
@@ -29,6 +32,18 @@ const Gallery = () => {
     return el.name.includes(query);
   });
 
+  useEffect(()=>{
+    console.log('query', query)
+    const tempphoto = photo.filter((el) => {
+      return el.name.toLowerCase().includes(query.toLowerCase());
+    });
+
+    setShowPhoto(tempphoto)
+  },[query])
+
+  useEffect(()=>{
+
+  },[photo])
   const event = () => {
     if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 2) {
       setPage((page) => {
@@ -55,7 +70,7 @@ const Gallery = () => {
   return (
     <>
       <SearchBar passQuery={setQuery} />
-      <PhotoGallery {...photo.slice(0, 9 * page)} />
+      <PhotoGallery {...showPhoto.slice(0, 9 * page)} />
     </>
   );
 };

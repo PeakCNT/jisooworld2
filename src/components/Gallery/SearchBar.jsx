@@ -8,6 +8,7 @@ const SearchBar = ({ passQuery }) => {
   const [query, setQuery] = useState("");
 
   const changeQuery = (value) => {
+    console.log('value', value)
     passQuery(value);
   };
 
