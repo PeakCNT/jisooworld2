@@ -1,24 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import "../../index.css";
-import PNG from "../../asset/Albumwithbg.jfif";
 import "bulma/css/bulma.css";
+import "antd/dist/antd.css";
 
-const Screen = ({ id, img, title, content, modal }) => {
+const Screen = ({ id, img, title, content }) => {
   return (
     <Wrapper>
       <SCard>
         <div className="screen-imgbox">
-          <img className="screen-img" src={PNG} alt="" />
+          <img className="screen-img" src={img} alt="" />
         </div>
         <div className="screen-txtbox">
-          <h1 className="screen-header">Blackpink 2022 Welcoming Collection</h1>
-          <p className="screen-text" style={{ paddingTop: "3rem" }}>
+          <h1 className="screen-header">{title}</h1>
+          <p
+            className="screen-text"
+            style={{ paddingTop: "3rem", fontSize: "1.25rem" }}
+          >
             {content}
           </p>
-          <button className="button is-dark screen-btn neon-button">
-            Read more
-          </button>
         </div>
       </SCard>
     </Wrapper>

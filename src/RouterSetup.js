@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Biography from "./pages/Biography";
+import Gallery from "./pages/Gallery";
 
 const RouterSetup = () => {
   return (
@@ -13,6 +14,7 @@ const RouterSetup = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/biography" element={<Biography />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
     </Router>

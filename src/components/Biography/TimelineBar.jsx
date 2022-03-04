@@ -3,36 +3,15 @@ import styled from "styled-components";
 import "bulma/css/bulma.css";
 import "../Biography/TimelineBar.css";
 
-const TimelineBar = () => {
-  const [show1, setShow1] = useState(false);
+const TimelineBar = ({ passIdtoparent }) => {
+  const [show, setShow] = useState(false);
 
-  const toggleShow1 = () => {
-    setShow1(!show1);
+  const changeID = (index) => {
+    passIdtoparent(index);
   };
-  const [show2, setShow2] = useState(false);
 
-  const toggleShow2 = () => {
-    setShow2(!show2);
-  };
-  const [show3, setShow3] = useState(false);
-
-  const toggleShow3 = () => {
-    setShow3(!show3);
-  };
-  const [show4, setShow4] = useState(false);
-
-  const toggleShow4 = () => {
-    setShow4(!show4);
-  };
-  const [show5, setShow5] = useState(false);
-
-  const toggleShow5 = () => {
-    setShow5(!show5);
-  };
-  const [show6, setShow6] = useState(false);
-
-  const toggleShow6 = () => {
-    setShow6(!show6);
+  const toggleShow = (index) => {
+    setShow({ ...show, [index]: !show[index] });
   };
 
   return (
@@ -40,80 +19,98 @@ const TimelineBar = () => {
       <div className="timeline-wrapper clearfix">
         <div className="timeline-content-day">
           <div className="timeline-line"></div>
-          <div
-            className={`timeline-content-item ${show1 ? "active" : ""}`}
-            data-timeline="hour-8"
-          >
-            <button onMouseOver={() => toggleShow1()}>1</button>
+          <div className={`timeline-content-item ${show[1] ? "active" : ""}`}>
+            <button onMouseOver={() => toggleShow(1)}>1</button>
             <div className="timeline-content-item-reveal">
-              <button onMouseLeave={() => toggleShow1()}>
-                <img src="https://picsum.photos/g/300/300" alt="" />
-                <span>Lorem Ipsum</span>
+              <button
+                onMouseLeave={() => toggleShow(1)}
+                onClick={() => changeID(1)}
+              >
+                <img
+                  src="https://res.cloudinary.com/dlqpq9wxh/image/upload/v1645698337/Jisooworld/Screencard/Kid%20jisoo.jpg"
+                  alt=""
+                />
+                <span>The day she was born</span>
               </button>
             </div>
           </div>
 
-          <div
-            className={`timeline-content-item ${show2 ? "active" : ""}`}
-            data-timeline="hour-9"
-          >
-            <button onMouseOver={() => toggleShow2()}>2</button>
+          <div className={`timeline-content-item ${show[2] ? "active" : ""}`}>
+            <button onMouseOver={() => toggleShow(2)}>2</button>
             <div className="timeline-content-item-reveal">
-              <button onMouseLeave={() => toggleShow2()}>
-                <img src="https://picsum.photos/g/300/300" alt="" />
-                <span>Lorem Ipsum</span>
+              <button
+                onMouseLeave={() => toggleShow(2)}
+                onClick={() => changeID(2)}
+              >
+                <img
+                  src="https://res.cloudinary.com/dlqpq9wxh/image/upload/v1645698742/Jisooworld/Screencard/jisoo.jpg"
+                  alt=""
+                />
+                <span>The day you know her as Jisoo</span>
               </button>
             </div>
           </div>
 
-          <div
-            className={`timeline-content-item ${show3 ? "active" : ""}`}
-            data-timeline="hour-10"
-          >
-            <button onMouseOver={() => toggleShow3()}>3</button>
+          <div className={`timeline-content-item ${show[3] ? "active" : ""}`}>
+            <button onMouseOver={() => toggleShow(3)}>3</button>
             <div className="timeline-content-item-reveal">
-              <button onMouseLeave={() => toggleShow3()}>
-                <img src="https://picsum.photos/g/300/300" alt="" />
-                <span>Lorem Ipsum</span>
+              <button
+                onMouseLeave={() => toggleShow(3)}
+                onClick={() => changeID(3)}
+              >
+                <img
+                  src="https://res.cloudinary.com/dlqpq9wxh/image/upload/v1645698864/Jisooworld/Screencard/Worldtour.jpg"
+                  alt=""
+                />
+                <span>In Your Area World Tour</span>
               </button>
             </div>
           </div>
 
-          <div
-            className={`timeline-content-item ${show4 ? "active" : ""}`}
-            data-timeline="hour-11"
-          >
-            <button onMouseOver={() => toggleShow4()}>4</button>
+          <div className={`timeline-content-item ${show[4] ? "active" : ""}`}>
+            <button onMouseOver={() => toggleShow(4)}>4</button>
             <div className="timeline-content-item-reveal">
-              <button onMouseLeave={() => toggleShow4()}>
-                <img src="https://picsum.photos/g/300/300" alt="" />
-                <span>Lorem Ipsum</span>
+              <button
+                onMouseLeave={() => toggleShow(4)}
+                onClick={() => changeID(4)}
+              >
+                <img
+                  src="https://res.cloudinary.com/dlqpq9wxh/image/upload/v1645699315/Jisooworld/Screencard/Diormuse.jpg"
+                  alt=""
+                />
+                <span>MUSE</span>
               </button>
             </div>
           </div>
 
-          <div
-            className={`timeline-content-item ${show5 ? "active" : ""}`}
-            data-timeline="hour-12"
-          >
-            <button onMouseOver={() => toggleShow5()}>5</button>
+          <div className={`timeline-content-item ${show[5] ? "active" : ""}`}>
+            <button onMouseOver={() => toggleShow(5)}>5</button>
             <div className="timeline-content-item-reveal">
-              <button onMouseLeave={() => toggleShow5()}>
-                <img src="https://picsum.photos/g/300/300" alt="" />
-                <span>Lorem Ipsum</span>
+              <button
+                onMouseLeave={() => toggleShow(5)}
+                onClick={() => changeID(5)}
+              >
+                <img
+                  src="https://res.cloudinary.com/dlqpq9wxh/image/upload/v1645699571/Jisooworld/Screencard/theshow.jpg"
+                  alt=""
+                />
+                <span>Blackpink : The Show</span>
               </button>
             </div>
           </div>
 
-          <div
-            className={`timeline-content-item ${show6 ? "active" : ""}`}
-            data-timeline="hour-13"
-          >
-            <button onMouseOver={() => toggleShow6()}>6</button>
+          <div className={`timeline-content-item ${show[6] ? "active" : ""}`}>
+            <button onMouseOver={() => toggleShow(6)}>6</button>
             <div className="timeline-content-item-reveal">
-              <button onMouseLeave={() => toggleShow6()}>
-                <img src="https://picsum.photos/g/300/300" alt="" />
-                <span>Lorem Ipsum</span>
+              <button
+                onMouseLeave={() => toggleShow(6)}
+                onClick={() => changeID(6)}
+              >
+                <img
+                  src="https://res.cloudinary.com/dlqpq9wxh/image/upload/v1645700011/Jisooworld/Screencard/r3d3b69amjLG92hgu0P-o_qkdj22.jpg"
+                  alt=""
+                />
+                <span>Actress Jisoo</span>
               </button>
             </div>
           </div>

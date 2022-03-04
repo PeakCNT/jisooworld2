@@ -57,6 +57,10 @@ const Navbar = () => {
             Biography
           </Link>
 
+          <Link to="/gallery" class="navbar-item is-dark">
+            Gallery
+          </Link>
+
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-item is-dark">More</a>
 
@@ -79,6 +83,10 @@ const Navbar = () => {
 
           <Link to="/biography" class="navbar-item">
             Biography
+          </Link>
+
+          <Link to="/gallery" class="navbar-item">
+            Gallery
           </Link>
 
           <div class="navbar-item has-dropdown is-hoverable">
