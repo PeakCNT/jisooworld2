@@ -52,6 +52,7 @@ export default PhotoGallery;
 
 const Wrapper = styled.div`
   width: 100vw;
+  min-height:100vh;
   background: linear-gradient(to right, #f650a0, #ff9897);
   display: flex;
   flex-direction: row;

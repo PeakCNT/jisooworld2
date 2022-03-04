@@ -12,7 +12,7 @@ const Biography = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:3000/data")
+      .get("http://localhost:4000/data")
       .then((response) => {
         // handle success
         setData(response.data.data);

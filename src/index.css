@@ -156,7 +156,8 @@
 
 .column-img {
   vertical-align: middle;
-  width: 100%;
+  width: 33vw;
+  object-fit: contain;
   cursor: pointer;
 }
 
@@ -246,4 +247,8 @@
   .photo {
     width: 95vw;
   }
+}
+
+.ant-image-preview-img {
+  min-width: 33vw;
 }

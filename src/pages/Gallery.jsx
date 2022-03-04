@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import SearchBar from "../components/Gallery/SearchBar";
 import PhotoGallery from "../components/Gallery/PhotoGallery";
 import axios from "axios";
+import { Spin } from 'antd';
+import { LoadingOutlined } from '@ant-design/icons';
+
+
 
 const Gallery = () => {
   const [photo, setPhoto] = useState([]);
@@ -56,13 +60,15 @@ const Gallery = () => {
     window.addEventListener("scroll", event);
   }, []);
 
+
   if (loading) {
     return (
-      <div className="loading">
-        <img
-          src="https://res.cloudinary.com/dlqpq9wxh/image/upload/v1646379070/Jisooworld/preload_teoqtf.gif"
-          alt=""
-        />
+      <div style={{'display':'flex','height':'75vh',justifyContent:'center',alignItems:'center', backgroundImage: 'linear-gradient(to right, #f650a0, #ff9897)'}}>
+      <img
+      src="https://res.cloudinary.com/dlqpq9wxh/image/upload/v1646379070/Jisooworld/preload_teoqtf.gif"
+      alt=""
+      style={{maxWidth:'20vw' ,borderRadius:'50%'}}
+    />
       </div>
     );
   }
