@@ -107,7 +107,7 @@ const TimelineBar = ({ passIdtoparent }) => {
                 onClick={() => changeID(6)}
               >
                 <img
-                  src="https://res.cloudinary.com/dlqpq9wxh/image/upload/v1645700011/Jisooworld/Screencard/r3d3b69amjLG92hgu0P-o_qkdj22.jpg"
+                  src="https://res.cloudinary.com/dlqpq9wxh/image/upload/v1645700011/Jisooworld/Screencard/snowdrop1.jpg"
                   alt=""
                 />
                 <span>Actress Jisoo</span>
