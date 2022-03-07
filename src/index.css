@@ -247,6 +247,10 @@
   .photo {
     width: 95vw;
   }
+
+  .ant-image {
+    width: 100vw;
+  }
 }
 
 .ant-image-preview-img {
