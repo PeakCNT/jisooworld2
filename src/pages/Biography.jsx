@@ -28,10 +28,19 @@ const Biography = () => {
 
   if (loading) {
     return (
-      <div className="loading">
+      <div
+        style={{
+          display: "flex",
+          height: "75vh",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundImage: "linear-gradient(to right, #f650a0, #ff9897)",
+        }}
+      >
         <img
           src="https://res.cloudinary.com/dlqpq9wxh/image/upload/v1646379070/Jisooworld/preload_teoqtf.gif"
           alt=""
+          style={{ maxWidth: "20vw", borderRadius: "50%" }}
         />
       </div>
     );
