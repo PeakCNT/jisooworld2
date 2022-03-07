@@ -17,7 +17,7 @@ const Gallery = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:4000/gallery")
+      .get("https://jisooworld-api.herokuapp.com/gallery")
       .then((response) => {
         // handle success
         setPhoto(response.data.data);

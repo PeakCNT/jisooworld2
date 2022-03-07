@@ -12,7 +12,7 @@ const Biography = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:4000/data")
+      .get("https://jisooworld-api.herokuapp.com/data")
       .then((response) => {
         // handle success
         setData(response.data.data);

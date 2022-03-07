@@ -49,15 +49,27 @@ const Navbar = () => {
 
       {show && (
         <div className="navbar-wrapper is-dark">
-          <Link to="/" class="navbar-item is-dark">
+          <Link
+            to="/"
+            class="navbar-item is-dark"
+            style={{ borderRadius: "6px" }}
+          >
             Home
           </Link>
 
-          <Link to="/biography" class="navbar-item is-dark">
+          <Link
+            to="/biography"
+            class="navbar-item is-dark"
+            style={{ borderRadius: "6px" }}
+          >
             Biography
           </Link>
 
-          <Link to="/gallery" class="navbar-item is-dark">
+          <Link
+            to="/gallery"
+            class="navbar-item is-dark"
+            style={{ borderRadius: "6px" }}
+          >
             Gallery
           </Link>
 
@@ -67,9 +79,6 @@ const Navbar = () => {
             <div class="navbar-dropdown">
               <a class="navbar-item is-dark">About</a>
               <a class="navbar-item is-dark">Jobs</a>
-              <a class="navbar-item is-dark">Contact</a>
-              <hr class="navbar-divider"></hr>
-              <a class="navbar-item is-dark">Report an issue</a>
             </div>
           </div>
         </div>
@@ -77,15 +86,23 @@ const Navbar = () => {
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-end">
-          <Link to="/" class="navbar-item">
+          <Link to="/" class="navbar-item" style={{ borderRadius: "6px" }}>
             Home
           </Link>
 
-          <Link to="/biography" class="navbar-item">
+          <Link
+            to="/biography"
+            class="navbar-item"
+            style={{ borderRadius: "6px" }}
+          >
             Biography
           </Link>
 
-          <Link to="/gallery" class="navbar-item">
+          <Link
+            to="/gallery"
+            class="navbar-item"
+            style={{ borderRadius: "6px" }}
+          >
             Gallery
           </Link>
 
@@ -94,10 +111,7 @@ const Navbar = () => {
 
             <div class="navbar-dropdown">
               <a class="navbar-item">About</a>
-              <a class="navbar-item">Jobs</a>
               <a class="navbar-item">Contact</a>
-              <hr class="navbar-divider"></hr>
-              <a class="navbar-item">Report an issue</a>
             </div>
           </div>
         </div>
