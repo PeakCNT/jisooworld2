@@ -36,7 +36,7 @@ const Navbar = () => {
 
         <button
           className="navbar-burger burger"
-          style={{ transform: show ? "rotate(90deg)" : "" }}
+          // style={{ transform: show ? "rotate(90deg)" : "" }}
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
@@ -98,13 +98,13 @@ const Navbar = () => {
             Biography
           </Link>
 
-          <Link
-            to="/gallery"
+          <a
+            href="/gallery"
             class="navbar-item"
             style={{ borderRadius: "6px" }}
           >
             Gallery
-          </Link>
+          </a>
 
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">More</a>
