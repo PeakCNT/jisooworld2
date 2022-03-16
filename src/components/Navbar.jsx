@@ -32,7 +32,9 @@ const Navbar = () => {
       aria-label="main navigation"
     >
       <div class="navbar-brand">
-        <h1 class="is-size-2">JisooWorld</h1>
+        <Link to="/" class="is-size-2">
+          JisooWorld
+        </Link>
 
         <button
           className="navbar-burger burger"
@@ -98,13 +100,13 @@ const Navbar = () => {
             Biography
           </Link>
 
-          <a
-            href="/gallery"
+          <Link
+            to="/gallery"
             class="navbar-item"
             style={{ borderRadius: "6px" }}
           >
             Gallery
-          </a>
+          </Link>
 
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">More</a>
