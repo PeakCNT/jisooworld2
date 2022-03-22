@@ -26,7 +26,7 @@ const Footer = () => {
               href="https://github.com/PeakCNT"
               target="_blank"
               className="icon-footer"
-              style={{ color: "#FFF" }}
+              style={{ color: "#FFF", marginTop: "-1rem" }}
             >
               <FaGithub size={50} />
             </a>

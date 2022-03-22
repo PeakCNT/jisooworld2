@@ -68,7 +68,7 @@ const Zone = styled.div`
   margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
+  gap: 5px;
 `;
 const Column = styled.div`
   flex: 33%;

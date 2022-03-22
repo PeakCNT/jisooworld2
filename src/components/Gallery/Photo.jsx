@@ -6,7 +6,7 @@ import { Image } from "antd";
 
 const Photo = ({ id, name, content, like, img }) => {
   return (
-    <article className="photo">
+    <article className="photo" style={{ marginBottom: "16px" }}>
       <Image
         className="column-img"
         style={{ width: "100vw" }}
