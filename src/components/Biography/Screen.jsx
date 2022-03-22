@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import "../../index.css";
-import "bulma/css/bulma.css";
 import "antd/dist/antd.css";
 
 const Screen = ({ id, img, title, content }) => {
@@ -46,7 +45,6 @@ const SCard = styled.article`
   border-radius: 20px;
   display: flex;
   flex-direction: row;
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
   box-shadow: inset 0 0 0.5em 0 rgb(22, 21, 22), 0 0 0.5em 0 rgb(22, 21, 22);
   @media (max-width: 768px) {
     width: 90%;

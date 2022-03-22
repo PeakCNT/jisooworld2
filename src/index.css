@@ -46,10 +46,6 @@
   padding-right: 15rem;
 }
 
-.pd-footer {
-  padding: 5rem;
-}
-
 .screen-imgbox {
   width: 50%;
   height: 100%;
@@ -109,6 +105,9 @@
   background: transparent;
   color: #363636;
   border-bottom: 3px solid #363636;
+}
+
+.submit-btn {
   cursor: pointer;
 }
 
@@ -171,6 +170,12 @@
 
 .loading img {
   width: 100px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -250,6 +255,9 @@
 
   .ant-image {
     width: 100vw;
+  }
+  .hero-content {
+    flex-direction: column;
   }
 }
 

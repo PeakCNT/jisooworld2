@@ -1,6 +1,6 @@
 import react, { useState, useEffect } from "react";
-import "bulma/css/bulma.css";
 import "../index.css";
+
 import { useGlobalContext } from "../context";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
@@ -32,7 +32,7 @@ const Navbar = () => {
       aria-label="main navigation"
     >
       <div class="navbar-brand">
-        <Link to="/" class="is-size-2">
+        <Link to="/" class="is-size-2" style={{ color: "black" }}>
           JisooWorld
         </Link>
 
@@ -50,18 +50,22 @@ const Navbar = () => {
       </div>
 
       {show && (
-        <div className="navbar-wrapper is-dark">
-          <Link
-            to="/"
-            class="navbar-item is-dark"
-            style={{ borderRadius: "6px" }}
-          >
+        <div
+          className="navbar-wrapper is-dark"
+          style={{
+            position: "absolute",
+            background: "linear-gradient(to right, #f650a0, #ff9897)",
+            width: "100%",
+            borderRadius: "6px",
+          }}
+        >
+          <Link to="/" class="navbar-item " style={{ borderRadius: "6px" }}>
             Home
           </Link>
 
           <Link
             to="/biography"
-            class="navbar-item is-dark"
+            class="navbar-item "
             style={{ borderRadius: "6px" }}
           >
             Biography
@@ -69,20 +73,19 @@ const Navbar = () => {
 
           <Link
             to="/gallery"
-            class="navbar-item is-dark"
+            class="navbar-item "
             style={{ borderRadius: "6px" }}
           >
             Gallery
           </Link>
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-item is-dark">More</a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item is-dark">About</a>
-              <a class="navbar-item is-dark">Jobs</a>
-            </div>
-          </div>
+          <Link
+            to="/about"
+            class="navbar-item "
+            style={{ borderRadius: "6px" }}
+          >
+            About me
+          </Link>
         </div>
       )}
 
@@ -108,14 +111,9 @@ const Navbar = () => {
             Gallery
           </Link>
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">More</a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item">About</a>
-              <a class="navbar-item">Contact</a>
-            </div>
-          </div>
+          <Link to="/about" class="navbar-item" style={{ borderRadius: "6px" }}>
+            About me
+          </Link>
         </div>
       </div>
     </nav>

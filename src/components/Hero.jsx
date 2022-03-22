@@ -1,13 +1,13 @@
 import react from "react";
-import "bulma/css/bulma.css";
 import "../index.css";
+import "../bulma.css";
 import heroPng from "../asset/Hero.png";
 
 const Hero = () => {
   return (
     <section class="hero is-pink is-fullheight-with-navbar">
       <div className="hero-body" style={{ padding: "0" }}>
-        <div className="columns">
+        <div className="columns hero-content">
           <div className="column is-half pt-hero">
             <h1
               className="title is-1"

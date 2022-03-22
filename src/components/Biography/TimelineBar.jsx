@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import "bulma/css/bulma.css";
 import "../Biography/TimelineBar.css";
 
 const TimelineBar = ({ passIdtoparent }) => {

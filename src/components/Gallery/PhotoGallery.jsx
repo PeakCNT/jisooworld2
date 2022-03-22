@@ -52,7 +52,7 @@ export default PhotoGallery;
 
 const Wrapper = styled.div`
   width: 100vw;
-  min-height:100vh;
+  min-height: 100vh;
   background: linear-gradient(to right, #f650a0, #ff9897);
   display: flex;
   flex-direction: row;
@@ -68,6 +68,7 @@ const Zone = styled.div`
   margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
+  gap: 7px;
 `;
 const Column = styled.div`
   flex: 33%;
